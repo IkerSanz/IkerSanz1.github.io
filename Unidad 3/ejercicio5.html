@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Ejercicio 5</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <style type="text/css">
+<!--
+.Estilo1 {color: #fffdfd}
+-->
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h1 class="Estilo1">Calculadora en Javascript</h1>
+        <h3 class="Estilo1">Evaluar una expresión de dos operandos enteros de acuerdo al operador que se elija, se debe visualizar el resultado considerando la posibilidad que en la divisiónse intente por 0, para lo cual el resultado debe ser también 0) aun cuando se sabe que una división por cero tiende al infinito)</h3>
+        <table border="1" style="background-color: rgba(82, 67, 240, 0.617)">
+            <tr>
+                <td><span class="Estilo1">Operadores</span></td>
+                <td><span class="Estilo1">Descripcion</span></td>
+            </tr>
+            <tr>
+                <td><span class="Estilo1">+</span></td>
+                <td><span class="Estilo1">Suma</span></td>
+            </tr>
+        <tr>
+            <td><span class="Estilo1">-</span></td>
+            <td><span class="Estilo1">Resta</span></td>
+        </tr>
+        <tr>
+            <td><span class="Estilo1">*</span></td>
+            <td><span class="Estilo1">Producto</span></td>
+        </tr>
+        <tr>
+            <td><span class="Estilo1">/</span></td>
+            <td><span class="Estilo1">Division</span></td>
+        </tr>
+        <tr>
+            <td><span class="Estilo1">**</span></td>
+            <td><span class="Estilo1">Potencia</span></td>
+        </tr>
+        </table>
+        <br>
+        <br>
+
+        <img src="imagenes/opebas.png" alt="" width="330" height="330">
+        <div align="center"></div>
+        <br><br>
+        <h3 class="Estilo1">Anote 2 numeros</h3>
+        <input type="text" id="n11" placeholder="n1">
+        <input type="text" id="n22" placeholder="n2">
+    </div>
+    <div align="center">
+    <select id="op" class="escoger">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="**">**</option>
+    </select>
+    <script src="ejercicio5.js"></script>
+    <br><br>
+    <button type="button" id="calcular2" class="btn btn-success">Calcular</button>
+    <br><br>
+    <h3 class="Estilo1">El resultado de la operacion es: </h3>
+    <output id="r2" class="eje5"></output> 
+    </div>
+</body>
+<script src="ejercicio5.js"></script>
+</html>

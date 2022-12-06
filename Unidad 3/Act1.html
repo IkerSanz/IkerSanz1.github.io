@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Clase activa</title>
+        <script language="javascript">
+            
+            var km;
+            km = prompt("Introduzca el kilometraje de su recorrido (en números):", "");
+            km = parseInt(km);
+
+            if(km > 0 && km < 300)
+            {
+                alert("Usted adeuda $300 000");
+            } else if(km > 300 && km < 1000)
+            {
+                so=km-300
+                alert("Ha sobrepasado el kilometraje base por: " + so + " km" + 
+                " y tiene una deuda de: $ "+ so*15000);
+            }else if(km > 1000)
+            {
+                so=km-1000
+                alert("Ha sobrepasado el kilometraje base por: " + so + " km" + 
+                " y tiene una deuda de: $ "+ so*10000);
+            }else
+            {
+                alert("Introdujo un km invalido")
+            }
+        </script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body></body>
+</html>
